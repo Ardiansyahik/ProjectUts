@@ -41,7 +41,7 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.MyView
         ExerciseModel item = lists.get(position);
 
         if (posisi == 0 || posisi == 3){
-            holder.constraintLayout.setBackgroundColor(Color.parseColor("#F7F8FA"));
+            holder.constraintLayout.setBackgroundColor(Color.parseColor("#F7F7F7 "));
         }
 
         posisi++;
