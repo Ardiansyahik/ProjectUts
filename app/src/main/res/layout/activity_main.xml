@@ -13,7 +13,7 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginTop="16dp"
-		android:text="RecyclerView"
+		android:text="Info Gunung"
 		android:textSize="24sp"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
@@ -21,90 +21,47 @@
 		/>
 
 	<Button
-		android:id="@+id/button_simple"
+		android:id="@+id/Seven_Summit"
 		android:layout_width="0dp"
 		android:layout_height="wrap_content"
 		android:layout_marginStart="16dp"
-		android:layout_marginTop="8dp"
+		android:layout_marginTop="72dp"
 		android:layout_marginEnd="16dp"
-		android:text="Simple RecyclerView"
+		android:onClick="handleLogoButton"
+		android:text="Seven Summit"
 		android:textAllCaps="false"
-        android:onClick="handleSimpleButton"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/text_title"
-		/>
+		app:layout_constraintTop_toBottomOf="@+id/text_title" />
 
 	<Button
-		android:id="@+id/button_logo"
+		android:id="@+id/Gunung_Pemula"
 		android:layout_width="0dp"
 		android:layout_height="wrap_content"
 		android:layout_marginStart="16dp"
-		android:layout_marginTop="8dp"
+		android:layout_marginTop="36dp"
 		android:layout_marginEnd="16dp"
-		android:text="Logo RecyclerView"
+		android:onClick="handleLogoButton"
+		android:text="Gunung untuk Pemula"
 		android:textAllCaps="false"
-        android:onClick="handleLogoButton"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/button_simple"
-		/>
+		app:layout_constraintTop_toBottomOf="@+id/Seven_Summit" />
 
 	<Button
-		android:id="@+id/button_grid"
+		android:id="@+id/Sunrise_Sunset_Hunter"
 		android:layout_width="0dp"
 		android:layout_height="wrap_content"
 		android:layout_marginStart="16dp"
+		android:layout_marginTop="32dp"
 		android:layout_marginEnd="16dp"
-		android:text="Grid Layout"
+		android:onClick="handleLogoButton"
+		android:text="Sunset / Sunrise Hunter"
 		android:textAllCaps="false"
-        android:onClick="handleGridButton"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/button_logo"
-		/>
-
-	<Button
-		android:id="@+id/button_viewtype"
-		android:layout_width="0dp"
-		android:layout_height="wrap_content"
-		android:layout_marginStart="16dp"
-		android:layout_marginTop="8dp"
-		android:layout_marginEnd="16dp"
-		android:text="ViewType"
-		android:textAllCaps="false"
-		android:onClick="handleViewTypeButton"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/button_grid"
-		/>
-
-	<Button
-		android:id="@+id/button_exercise"
-		android:layout_width="0dp"
-		android:layout_height="wrap_content"
-		android:layout_marginStart="16dp"
-		android:layout_marginTop="8dp"
-		android:layout_marginEnd="16dp"
-		android:text="Exercise"
-		android:textAllCaps="false"
-		android:onClick="handleExercise"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/button_viewtype"
-		/>
-
-	<Button
-		android:layout_width="0dp"
-		android:layout_height="wrap_content"
-		android:layout_marginStart="16dp"
-		android:layout_marginTop="8dp"
-		android:layout_marginEnd="16dp"
-		android:text="Fast Adapter"
-		android:textAllCaps="false"
-		android:onClick="handleFastAdapter"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/button_exercise"
-		/>
+		app:layout_constraintTop_toBottomOf="@id/Gunung_Pemula" />
 </androidx.constraintlayout.widget.ConstraintLayout>

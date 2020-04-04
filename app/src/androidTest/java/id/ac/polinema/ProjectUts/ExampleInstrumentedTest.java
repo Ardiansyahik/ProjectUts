@@ -1,4 +1,4 @@
-package id.ac.polinema.recyclerview;
+package id.ac.polinema.ProjectUts;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
 		// Context of the app under test.
 		Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-		assertEquals("id.ac.polinema.recyclerview", appContext.getPackageName());
+		assertEquals("id.ac.polinema.ProjectUts", appContext.getPackageName());
 	}
 }

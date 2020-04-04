@@ -1,6 +1,5 @@
-package id.ac.polinema.recyclerview.adapters;
+package id.ac.polinema.ProjectUts.adapters;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,26 +13,26 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import id.ac.polinema.recyclerview.R;
-import id.ac.polinema.recyclerview.models.TeamLogo;
+import id.ac.polinema.ProjectUts.R;
+import id.ac.polinema.ProjectUts.models.SevenSummit_Logo;
 
-public class LogoAdapter extends RecyclerView.Adapter<LogoAdapter.MyViewHolder> {
-    private List<TeamLogo> items;
+public class SevenSummit_Adapter extends RecyclerView.Adapter<SevenSummit_Adapter.MyViewHolder> {
+    private List<SevenSummit_Logo> items;
 
-    public LogoAdapter(List<TeamLogo> items) {
+    public SevenSummit_Adapter(List<SevenSummit_Logo> items) {
         this.items = items;
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_logo, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_sevensummit, parent, false);
         return new MyViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        TeamLogo teamLogo = items.get(position);
+        SevenSummit_Logo teamLogo = items.get(position);
 
         holder.namaText.setText(teamLogo.getNama());
         Picasso.get().load(teamLogo.getLogo()).into(holder.logoImage);

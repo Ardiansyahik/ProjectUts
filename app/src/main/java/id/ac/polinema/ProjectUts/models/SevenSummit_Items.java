@@ -1,4 +1,4 @@
-package id.ac.polinema.recyclerview.models;
+package id.ac.polinema.ProjectUts.models;
 
 import android.view.View;
 import android.widget.ImageView;
@@ -12,12 +12,12 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import id.ac.polinema.recyclerview.R;
+import id.ac.polinema.ProjectUts.R;
 
-public class TeamItems extends AbstractItem<TeamItems,TeamItems.MyViewHolder> {
+public class SevenSummit_Items extends AbstractItem<SevenSummit_Items, SevenSummit_Items.MyViewHolder> {
     private String logo,name;
 
-    public TeamItems(String logo, String name) {
+    public SevenSummit_Items(String logo, String name) {
         this.logo = logo;
         this.name = name;
     }
@@ -35,10 +35,10 @@ public class TeamItems extends AbstractItem<TeamItems,TeamItems.MyViewHolder> {
 
     @Override
     public int getLayoutRes() {
-        return R.layout.item_logo;
+        return R.layout.item_sevensummit;
     }
 
-    public class MyViewHolder extends FastAdapter.ViewHolder<TeamItems> {
+    public class MyViewHolder extends FastAdapter.ViewHolder<SevenSummit_Items> {
         ImageView imageView;
         TextView textView;
         public MyViewHolder(View itemView) {
@@ -49,13 +49,13 @@ public class TeamItems extends AbstractItem<TeamItems,TeamItems.MyViewHolder> {
         }
 
         @Override
-        public void bindView(TeamItems item, List<Object> payloads) {
+        public void bindView(SevenSummit_Items item, List<Object> payloads) {
             Picasso.get().load(item.logo).into(imageView);
             textView.setText(item.name);
         }
 
         @Override
-        public void unbindView(TeamItems item) {
+        public void unbindView(SevenSummit_Items item) {
             imageView.setImageBitmap(null);
             textView.setText(null);
         }

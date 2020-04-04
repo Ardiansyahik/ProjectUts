@@ -1,4 +1,4 @@
-package id.ac.polinema.recyclerview;
+package id.ac.polinema.ProjectUts;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,25 +14,14 @@ public class MainActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_main);
 	}
 
-	public void handleSimpleButton(View view) {
-		startActivity(new Intent(this, SimpleActivity.class));
-	}
-
 	public void handleLogoButton(View view) {
-		startActivity(new Intent(this, LogoActivity.class));
+		startActivity(new Intent(this, SevenSummit_Activity.class));
 	}
 
 	public void handleGridButton(View view) {
-		startActivity(new Intent(this, GridActivity.class));
+		startActivity(new Intent(this, Pemula_Activity.class));
 	}
 
-	public void handleViewTypeButton(View view) {
-		startActivity(new Intent(this, ViewTypeActivity.class));
-	}
-
-	public void handleExercise(View view) {
-	    startActivity(new Intent(this, ExerciseActivity.class));
-	}
 
 	public void handleFastAdapter(View view) {
 		startActivity(new Intent(this, FastAdapterActivity.class));

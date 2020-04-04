@@ -1,4 +1,4 @@
-package id.ac.polinema.recyclerview;
+package id.ac.polinema.ProjectUts;
 
 import org.junit.Test;
 

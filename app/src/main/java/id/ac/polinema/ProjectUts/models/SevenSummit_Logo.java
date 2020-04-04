@@ -1,10 +1,10 @@
-package id.ac.polinema.recyclerview.models;
+package id.ac.polinema.ProjectUts.models;
 
-public class TeamLogo {
+public class SevenSummit_Logo {
     private String logo, nama;
 
 
-    public TeamLogo(String logo, String nama) {
+    public SevenSummit_Logo(String logo, String nama) {
         this.logo = logo;
         this.nama = nama;
     }

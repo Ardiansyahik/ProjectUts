@@ -1,4 +1,4 @@
-package id.ac.polinema.recyclerview;
+package id.ac.polinema.ProjectUts;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -12,8 +12,8 @@ import com.mikepenz.fastadapter.adapters.ItemAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-import id.ac.polinema.recyclerview.models.TeamItems;
-import id.ac.polinema.recyclerview.models.TeamLogo;
+import id.ac.polinema.ProjectUts.models.SevenSummit_Items;
+import id.ac.polinema.ProjectUts.models.SevenSummit_Logo;
 
 public class FastAdapterActivity extends AppCompatActivity {
 
@@ -28,10 +28,10 @@ public class FastAdapterActivity extends AppCompatActivity {
         FastAdapter fastAdapter = FastAdapter.with(itemAdapter);
 
         List teams = new ArrayList();
-        teams.add(new TeamItems("https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/360px-Liverpool_FC.svg.png", "Liverpool"));
-        teams.add(new TeamItems("https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/360px-Manchester_City_FC_badge.svg.png", "Man. City"));
-        teams.add(new TeamLogo("https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Atletico_Madrid_2017_logo.svg/800px-Atletico_Madrid_2017_logo.svg.png", "Atletico Madrid"));
-        teams.add(new TeamLogo("https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1024px-Manchester_United_FC_crest.svg.png", "Manchester United"));
+        teams.add(new SevenSummit_Items("https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/360px-Liverpool_FC.svg.png", "Liverpool"));
+        teams.add(new SevenSummit_Items("https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/360px-Manchester_City_FC_badge.svg.png", "Man. City"));
+        teams.add(new SevenSummit_Logo("https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Atletico_Madrid_2017_logo.svg/800px-Atletico_Madrid_2017_logo.svg.png", "Atletico Madrid"));
+        teams.add(new SevenSummit_Logo("https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1024px-Manchester_United_FC_crest.svg.png", "Manchester United"));
 
 
         itemAdapter.add(teams);
