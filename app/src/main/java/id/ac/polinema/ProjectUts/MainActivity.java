@@ -19,11 +19,12 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	public void handleGridButton(View view) {
+
 		startActivity(new Intent(this, Pemula_Activity.class));
 	}
 
 
 	public void handleFastAdapter(View view) {
-		startActivity(new Intent(this, FastAdapterActivity.class));
+		startActivity(new Intent(this, GoodViewActivity.class));
 	}
 }

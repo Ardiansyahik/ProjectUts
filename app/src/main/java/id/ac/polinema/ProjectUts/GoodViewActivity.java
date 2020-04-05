@@ -15,12 +15,12 @@ import java.util.List;
 import id.ac.polinema.ProjectUts.models.SevenSummit_Items;
 import id.ac.polinema.ProjectUts.models.SevenSummit_Logo;
 
-public class FastAdapterActivity extends AppCompatActivity {
+public class GoodViewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fast_adapter);
+        setContentView(R.layout.activity_goodview);
 
         RecyclerView recyclerView = findViewById(R.id.rv_teams);
 

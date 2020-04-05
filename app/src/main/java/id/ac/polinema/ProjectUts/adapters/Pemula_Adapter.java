@@ -33,7 +33,6 @@ public class Pemula_Adapter extends RecyclerView.Adapter<Pemula_Adapter.MyViewHo
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         Pemula_Logo teams = lists.get(position);
-
         holder.textView.setText(teams.getNama());
         Picasso.get().load(teams.getLogo()).into(holder.imageView);
     }
