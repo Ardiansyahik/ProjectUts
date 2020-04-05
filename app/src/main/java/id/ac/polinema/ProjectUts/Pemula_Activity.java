@@ -1,7 +1,6 @@
 package id.ac.polinema.ProjectUts;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -11,9 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import id.ac.polinema.ProjectUts.adapters.Pemula_Adapter;
-import id.ac.polinema.ProjectUts.adapters.SevenSummit_Adapter;
 import id.ac.polinema.ProjectUts.models.Pemula_Logo;
-import id.ac.polinema.ProjectUts.models.SevenSummit_Logo;
 
 public class Pemula_Activity extends AppCompatActivity {
 

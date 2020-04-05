@@ -20,6 +20,7 @@ public class SevenSummit_Adapter extends RecyclerView.Adapter<SevenSummit_Adapte
     private List<SevenSummit_Logo> items;
 
     public SevenSummit_Adapter(List<SevenSummit_Logo> items) {
+
         this.items = items;
     }
 

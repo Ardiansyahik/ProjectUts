@@ -25,6 +25,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 	public void handleFastAdapter(View view) {
-		startActivity(new Intent(this, GoodViewActivity.class));
+		startActivity(new Intent(this, GoodView_Activity.class));
 	}
 }

@@ -29,8 +29,8 @@ public class SevenSummit_Activity extends AppCompatActivity {
 		teams.add(new SevenSummit_Logo("https://indonesiatrip.id/wp-content/uploads/2016/02/trip-gunung-latimojong-820x690.jpg", "Gunung Latimojong"));
 		teams.add(new SevenSummit_Logo("https://id.wikipedia.org/wiki/Berkas:Binaiya.jpg", "Gunung Binaiya"));
 		teams.add(new SevenSummit_Logo("https://www.gunungbagging.com/wp-content/NEXTGEN/bukit-raya/DSCN1912.JPG", "Gunung Bukit Raya"));
-		SevenSummit_Adapter logoAdapter = new SevenSummit_Adapter(teams);
-		recyclerView.setAdapter(logoAdapter);
+		SevenSummit_Adapter sevenSummit_adapter = new SevenSummit_Adapter(teams);
+		recyclerView.setAdapter(sevenSummit_adapter);
 
 		recyclerView.setLayoutManager(new LinearLayoutManager(this));
 	}
