@@ -1,10 +1,10 @@
 package id.ac.polinema.ProjectUts.models;
 
-public class SevenSummit_Logo {
+public class Gunung_Logo {
     private String logo, nama;
 
 
-    public SevenSummit_Logo(String logo, String nama) {
+    public Gunung_Logo(String logo, String nama) {
         this.logo = logo;
         this.nama = nama;
     }

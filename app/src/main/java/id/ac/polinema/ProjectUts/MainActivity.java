@@ -15,16 +15,6 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	public void handleLogoButton(View view) {
-		startActivity(new Intent(this, SevenSummit_Activity.class));
-	}
-
-	public void handleGridButton(View view) {
-
-		startActivity(new Intent(this, Pemula_Activity.class));
-	}
-
-
-	public void handleFastAdapter(View view) {
-		startActivity(new Intent(this, GoodView_Activity.class));
+		startActivity(new Intent(this, Gunung_Activity.class));
 	}
 }

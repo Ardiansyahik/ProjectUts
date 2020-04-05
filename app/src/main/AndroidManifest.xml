@@ -11,8 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="id.ac.polinema.ProjectUts.Pemula_Activity" />
-        <activity android:name="id.ac.polinema.ProjectUts.SevenSummit_Activity" />
+        <activity android:name="id.ac.polinema.ProjectUts.Gunung_Activity" />
         <activity android:name="id.ac.polinema.ProjectUts.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

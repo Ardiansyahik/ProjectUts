@@ -14,12 +14,12 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 import id.ac.polinema.ProjectUts.R;
-import id.ac.polinema.ProjectUts.models.SevenSummit_Logo;
+import id.ac.polinema.ProjectUts.models.Gunung_Logo;
 
-public class SevenSummit_Adapter extends RecyclerView.Adapter<SevenSummit_Adapter.MyViewHolder> {
-    private List<SevenSummit_Logo> items;
+public class Gunung_Adapter extends RecyclerView.Adapter<Gunung_Adapter.MyViewHolder> {
+    private List<Gunung_Logo> items;
 
-    public SevenSummit_Adapter(List<SevenSummit_Logo> items) {
+    public Gunung_Adapter(List<Gunung_Logo> items) {
 
         this.items = items;
     }
@@ -33,7 +33,7 @@ public class SevenSummit_Adapter extends RecyclerView.Adapter<SevenSummit_Adapte
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        SevenSummit_Logo teamLogo = items.get(position);
+        Gunung_Logo teamLogo = items.get(position);
 
         holder.namaText.setText(teamLogo.getNama());
         Picasso.get().load(teamLogo.getLogo()).into(holder.logoImage);

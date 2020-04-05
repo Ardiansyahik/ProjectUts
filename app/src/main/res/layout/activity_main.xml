@@ -8,60 +8,36 @@
 	tools:context=".MainActivity"
 	>
 
-	<TextView
-		android:id="@+id/text_title"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="36dp"
-		android:text="Info Gunung"
-		android:textSize="24sp"
+	<ImageView
+		android:id="@+id/imageView2"
+		android:layout_width="323dp"
+		android:layout_height="415dp"
+		android:src="@drawable/gunung"
+		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.498"
+		app:layout_constraintHorizontal_bias="0.503"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent" />
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.144" />
 
 	<Button
 		android:id="@+id/Seven_Summit"
 		android:layout_width="0dp"
 		android:layout_height="wrap_content"
 		android:layout_marginStart="16dp"
-		android:layout_marginTop="84dp"
+		android:layout_marginTop="64dp"
 		android:layout_marginEnd="16dp"
+		android:backgroundTint="#00BCD4"
 		android:onClick="handleLogoButton"
-		android:text="Seven Summit"
+		android:text="Info Gunung Indonesia"
 		android:textAllCaps="false"
+		android:textColor="#ffff"
+		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/text_title" />
+		app:layout_constraintTop_toBottomOf="@+id/imageView2"
+		app:layout_constraintVertical_bias="0.0" />
 
-	<Button
-		android:id="@+id/Gunung_Pemula"
-		android:layout_width="0dp"
-		android:layout_height="wrap_content"
-		android:layout_marginStart="16dp"
-		android:layout_marginTop="12dp"
-		android:layout_marginEnd="16dp"
-		android:onClick="handleLogoButton"
-		android:text="Gunung untuk Pemula"
-		android:textAllCaps="false"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.0"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/Seven_Summit" />
 
-	<Button
-		android:id="@+id/Sunrise_Sunset_Hunter"
-		android:layout_width="0dp"
-		android:layout_height="wrap_content"
-		android:layout_marginStart="16dp"
-		android:layout_marginTop="12dp"
-		android:layout_marginEnd="16dp"
-		android:onClick="handleLogoButton"
-		android:text="Good View"
-		android:textAllCaps="false"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.0"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@id/Gunung_Pemula" />
 </androidx.constraintlayout.widget.ConstraintLayout>
