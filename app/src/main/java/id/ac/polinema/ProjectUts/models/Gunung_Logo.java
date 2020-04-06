@@ -1,27 +1,35 @@
 package id.ac.polinema.ProjectUts.models;
 
 public class Gunung_Logo {
-    private String logo, nama;
+    private String logo, name, description ;
 
-
-    public Gunung_Logo(String logo, String nama) {
+    public Gunung_Logo(String logo, String name, String description) {
         this.logo = logo;
-        this.nama = nama;
-    }
-
-    public String getLogo() {
-        return logo;
+        this.name = name;
+        this.description = description;
     }
 
     public void setLogo(String logo) {
         this.logo = logo;
     }
 
-    public String getNama() {
-        return nama;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getLogo() {
+        return logo;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
     }
 }

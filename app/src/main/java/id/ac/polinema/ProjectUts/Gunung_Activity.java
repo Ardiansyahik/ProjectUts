@@ -14,10 +14,11 @@ import id.ac.polinema.ProjectUts.models.Gunung_Logo;
 
 public class Gunung_Activity extends AppCompatActivity {
 
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_sevensummit);
+		setContentView(R.layout.activity_gunung);
 
 		RecyclerView recyclerView = findViewById(R.id.rv_teams);
 
