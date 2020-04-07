@@ -36,7 +36,7 @@ public class Gunung_Adapter extends RecyclerView.Adapter<Gunung_Adapter.MyViewHo
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_gunung, parent, false);
-        return new MyViewHolder(view);
+        return new Gunung_Adapter.MyViewHolder(view);
     }
 
     @Override
@@ -50,7 +50,7 @@ public class Gunung_Adapter extends RecyclerView.Adapter<Gunung_Adapter.MyViewHo
                 intent.putExtra("image_url", gunung_logo.getLogo());
                 intent.putExtra("image_name", gunung_logo.getName());
                 intent.putExtra("image_desc", gunung_logo.getDescription());
-                context.startActivities(new Intent[]{intent});
+                context.startActivity(intent);
             }
         });
         Picasso.get().load(gunung_logo.getLogo()).into(holder.logoImage);

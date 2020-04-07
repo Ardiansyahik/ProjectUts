@@ -1,5 +1,6 @@
 package id.ac.polinema.ProjectUts;
 
+import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
@@ -13,16 +14,14 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
 
-import id.ac.polinema.ProjectUts.models.Gunung_Logo;
-
 public class InfoActivity extends AppCompatActivity {
     private static final String TAG = "InfoActivity";
-    List<Gunung_Logo> gunung_logos = new ArrayList<>();
+    List gunung_logos = new ArrayList<>();
     
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.item_info);
+        setContentView(R.layout.activity_info);
         
         getInComingIntent();
         
@@ -39,9 +38,10 @@ public class InfoActivity extends AppCompatActivity {
         setLogo(imageUrl,imageName,imageDescription);
     }
 
-    private void setLogo(String imageUrl, String imageName, String imageDescription) {
+    private void setLogo(String image_Url, String imageName, String imageDescription) {
         Log.d(TAG, "setImage: setting te image and name to widgets.");
         ImageView image = findViewById(R.id.image);
+        Picasso.get().load(image_Url).into(image);
         TextView name = findViewById(R.id.titleText);
         TextView desc = findViewById(R.id.textDeskripsi);
         desc.setText(imageDescription);
