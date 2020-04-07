@@ -16,6 +16,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import id.ac.polinema.ProjectUts.Gunung_Activity;
 import id.ac.polinema.ProjectUts.InfoActivity;
 import id.ac.polinema.ProjectUts.R;
 import id.ac.polinema.ProjectUts.models.Gunung_Logo;
@@ -46,11 +47,11 @@ public class Gunung_Adapter extends RecyclerView.Adapter<Gunung_Adapter.MyViewHo
         holder.parent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, InfoActivity.class);
+                Intent intent = new Intent(v.getContext(), InfoActivity.class);
                 intent.putExtra("image_url", gunung_logo.getLogo());
                 intent.putExtra("image_name", gunung_logo.getName());
                 intent.putExtra("image_desc", gunung_logo.getDescription());
-                context.startActivity(intent);
+                v.getContext().startActivity(intent);
             }
         });
         Picasso.get().load(gunung_logo.getLogo()).into(holder.logoImage);
